@@ -226,15 +226,5 @@ flutter analyze
 - Stores app settings
 - Includes unread message count
 
-## 🚧 Future Enhancements
-
-- [ ] Complete image picker integration
-- [ ] Voice messages
-- [ ] Message search
-- [ ] Message reactions
-- [ ] Typing indicators
-- [ ] Read receipts
-- [ ] Push notifications
-- [ ] File attachments
 
 w
