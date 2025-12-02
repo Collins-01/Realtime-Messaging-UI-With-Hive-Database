@@ -1,6 +1,6 @@
-# Flutter Messaging App
+# TurboVets Messaging App
 
-A beautiful, production-ready Flutter messaging app with clean architecture, Hive database persistence, notification badges, and emoji support.
+A beautiful, production-ready Flutter messaging app with clean MVVM architecture, Hive database persistence, custom splash screen, and emoji support.
 
 ![Flutter](https://img.shields.io/badge/Flutter-3.8.1+-02569B?logo=flutter)
 ![Dart](https://img.shields.io/badge/Dart-3.0+-0175C2?logo=dart)
@@ -10,52 +10,64 @@ A beautiful, production-ready Flutter messaging app with clean architecture, Hiv
 
 ### Core Features
 - 💬 **Real-time Chat Interface** - Beautiful gradient AppBar with agent status
-- 🤖 **Auto-Reply System** - Intelligent responses after 1.5 seconds
+- 🤖 **Auto-Reply System** - 30+ customer service responses
 - 🌐 **In-App WebView** - Dashboard integration
 - 🎨 **Material Design 3** - Modern, polished UI
+- 🏗️ **MVVM Architecture** - ViewModel pattern with ChangeNotifier
 
 ### Bonus Features
 - 💾 **Hive Database** - Fast, type-safe NoSQL persistence
 - 🔔 **Notification Badge** - Real-time unread message counter
 - 😊 **Emoji Support** - Full emoji picker integration
 - 🖼️ **Image Messages** - Infrastructure ready for photo sharing
+- 🚀 **Custom Splash Screen** - Animated logo with zoom-in effect
+- 📱 **Custom App Icon** - Branded TurboVets logo
 
 ## 📱 Screenshots
 
-### Messaging Screen
-- Gradient AppBar with agent status indicator
-- Distinct message bubbles (agent: white, user: indigo)
-- Timestamps formatted as "10:30 AM"
-- Auto-scroll to latest messages
+<div align="center">
 
-### Notification Badge
-- Shows unread count on bell icon
-- Displays "9+" for 10+ messages
-- Tap to mark all as read
+### Messaging Screen
+![Messaging Screen](screenshots/messaging_screen.png)
+
+*Clean chat interface with gradient AppBar, agent status, and notification badge*
 
 ### Emoji Picker
-- Slides up from bottom
-- Browse emoji categories
-- Tap to send instantly
+![Emoji Picker](screenshots/emoji_picker.png)
+
+*Full emoji picker with category browsing and instant send*
+
+</div>
 
 ## 🏗️ Architecture
 
-Clean architecture with clear separation of concerns:
+Clean MVVM architecture with clear separation of concerns:
 
 ```
 lib/
-├── main.dart                    # App entry + Hive initialization
+├── main.dart                           # App entry + Hive initialization
 ├── models/
-│   ├── message.dart            # Message model with Hive annotations
-│   └── message.g.dart          # Generated Hive adapter
+│   ├── message.dart                   # Message model with Hive annotations
+│   └── message.g.dart                 # Generated Hive adapter
 ├── services/
-│   └── message_service.dart    # Hive-based persistence service
+│   └── message_service.dart           # Hive-based persistence service
+├── utils/
+│   └── message_constants.dart         # 30+ auto-reply messages
 ├── widgets/
-│   ├── message_bubble.dart     # Multi-type message display
-│   └── chat_input.dart         # Input with emoji button
+│   ├── message_bubble.dart            # Multi-type message display
+│   └── chat_input.dart                # Input with emoji button
 └── screens/
-    ├── messaging_screen.dart   # Chat with badge & emoji picker
-    └── dashboard_screen.dart   # In-app WebView
+    ├── splash_screen.dart             # Animated splash with zoom effect
+    ├── dashboard_screen.dart          # In-app WebView
+    └── messaging/
+        ├── messaging_screen.dart      # Chat UI (uses ViewModel)
+        ├── messaging_viewmodel.dart   # State management with ChangeNotifier
+        └── components/
+            ├── chat_app_bar.dart      # Custom gradient AppBar
+            ├── message_list.dart      # Scrollable message list
+            ├── emoji_picker_panel.dart # Emoji picker component
+            ├── notification_badge.dart # Reusable badge widget
+            └── agent_status_indicator.dart # Online/offline indicator
 ```
 
 ## 🚀 Getting Started
@@ -117,6 +129,8 @@ flutter test
 |---------|---------|---------|
 | [hive_generator](https://pub.dev/packages/hive_generator) | ^2.0.1 | Generate type adapters |
 | [build_runner](https://pub.dev/packages/build_runner) | ^2.4.8 | Code generation |
+| [flutter_launcher_icons](https://pub.dev/packages/flutter_launcher_icons) | ^0.13.1 | Generate app icons |
+| [flutter_native_splash](https://pub.dev/packages/flutter_native_splash) | ^2.3.10 | Generate splash screens |
 
 ## 💡 Usage
 

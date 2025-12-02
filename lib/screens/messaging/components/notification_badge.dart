@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// A reusable notification badge widget that displays a count
-/// Can wrap any widget (typically an IconButton)
 class NotificationBadge extends StatelessWidget {
   final int count;
   final Widget child;

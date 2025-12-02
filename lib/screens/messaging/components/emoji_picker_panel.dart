@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:emoji_picker_flutter/emoji_picker_flutter.dart';
 
-/// A panel that displays an emoji picker
 class EmojiPickerPanel extends StatelessWidget {
   final bool isVisible;
   final Function(String) onEmojiSelected;

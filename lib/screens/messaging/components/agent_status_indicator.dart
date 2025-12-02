@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-/// Displays agent name and online/offline status
 class AgentStatusIndicator extends StatelessWidget {
   final String agentName;
   final bool isOnline;

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../../../models/message.dart';
 import '../../../widgets/message_bubble.dart';
 
-/// Displays a scrollable list of messages
 class MessageList extends StatelessWidget {
   final List<Message> messages;
   final ScrollController scrollController;

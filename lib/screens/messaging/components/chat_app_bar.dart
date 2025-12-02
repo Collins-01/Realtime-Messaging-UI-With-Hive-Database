@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'notification_badge.dart';
 import 'agent_status_indicator.dart';
 
-/// Custom AppBar for the chat screen
 class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
   final String agentName;
@@ -43,12 +42,10 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
             padding: const EdgeInsets.symmetric(horizontal: 8),
             child: Row(
               children: [
-                // Menu button
                 IconButton(
                   icon: const Icon(Icons.menu, color: Colors.white),
                   onPressed: onMenuPressed,
                 ),
-                // Title and subtitle
                 Expanded(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -69,12 +66,10 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
                     ],
                   ),
                 ),
-                // Search icon
                 IconButton(
                   icon: const Icon(Icons.search, color: Colors.white),
                   onPressed: onSearchPressed,
                 ),
-                // Bell icon with notification badge
                 NotificationBadge(
                   count: unreadCount,
                   child: IconButton(
