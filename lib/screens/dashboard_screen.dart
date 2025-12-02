@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-/// Dashboard screen with WebView
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen({super.key});
 

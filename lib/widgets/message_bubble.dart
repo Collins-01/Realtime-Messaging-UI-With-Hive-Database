@@ -91,7 +91,7 @@ class MessageBubble extends StatelessWidget {
     );
   }
 
-  /// Build message content based on type
+  /// Build message content based on current user tyep (agent or user)
   Widget _buildMessageContent(bool isAgent) {
     switch (message.type) {
       case MessageType.emoji:

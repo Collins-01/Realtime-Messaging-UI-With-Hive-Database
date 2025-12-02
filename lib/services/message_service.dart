@@ -1,7 +1,7 @@
 import 'package:hive_flutter/hive_flutter.dart';
 import '../models/message.dart';
 
-/// Service for managing message persistence using Hive
+/// Service for managing message persistence using Hive database
 class MessageService {
   static const String _boxName = 'messages';
   static const String _unreadCountKey = 'unread_count';
@@ -19,7 +19,7 @@ class MessageService {
   Future<void> addMessage(Message message) async {
     await _messagesBox.put(message.id, message);
 
-    // Increment unread count if it's an agent message
+    // Increment unread count if it's an agent message (message from the agency)
     if (message.sender == 'agent' && !message.isRead) {
       await incrementUnreadCount();
     }

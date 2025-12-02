@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'models/message.dart';
-import 'screens/messaging_screen.dart';
+import 'screens/splash_screen.dart';
 
 void main() async {
   // Ensure Flutter is initialized
@@ -55,7 +55,7 @@ class MessagingApp extends StatelessWidget {
         // Icon theme
         iconTheme: const IconThemeData(color: Color(0xFF6B7280)),
       ),
-      home: const MessagingScreen(),
+      home: const SplashScreen(),
     );
   }
 }
