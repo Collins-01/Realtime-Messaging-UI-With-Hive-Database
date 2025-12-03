@@ -27,6 +27,10 @@ A beautiful, production-ready Flutter messaging app with clean MVVM architecture
 
 <div align="center">
 
+### App Demo
+<video src="screenshots/app_demo.mov" controls width="300"></video>
+<br/>
+
 ### Messaging Screen
 ![Messaging Screen](screenshots/messaging_screen.png)
 
