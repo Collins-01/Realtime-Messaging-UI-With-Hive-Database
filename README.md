@@ -28,20 +28,44 @@ A beautiful, production-ready Flutter messaging app with clean MVVM architecture
 <div align="center">
   <table>
     <tr>
-      <td align="center" width="33%">
-        <video src="screenshots/app_demo.mov" controls width="250"></video>
+      <td align="center" width="25%">
+        <video src="screenshots/app_demo.mov" controls width="200"></video>
         <br/>
         <sub><b>App Demo</b></sub>
       </td>
-      <td align="center" width="33%">
-        <img src="screenshots/messaging_screen.png" width="250" alt="Messaging Screen"/>
+      <td align="center" width="25%">
+        <img src="screenshots/splash_screen.png" width="200" alt="Splash Screen"/>
+        <br/>
+        <sub><b>Splash Screen</b></sub>
+      </td>
+      <td align="center" width="25%">
+        <img src="screenshots/chat_interface.png" width="200" alt="Chat Interface"/>
+        <br/>
+        <sub><b>Chat Interface</b></sub>
+      </td>
+      <td align="center" width="25%">
+        <img src="screenshots/messaging_screen.png" width="200" alt="Messaging Screen"/>
         <br/>
         <sub><b>Messaging Screen</b></sub>
       </td>
-      <td align="center" width="33%">
-        <img src="screenshots/emoji_picker.png" width="250" alt="Emoji Picker"/>
+    </tr>
+    <tr>
+      <td align="center" width="25%">
+        <img src="screenshots/emoji_selection.png" width="200" alt="Emoji Selection"/>
+        <br/>
+        <sub><b>Emoji Selection</b></sub>
+      </td>
+      <td align="center" width="25%">
+        <img src="screenshots/emoji_picker.png" width="200" alt="Emoji Picker"/>
         <br/>
         <sub><b>Emoji Picker</b></sub>
+      </td>
+      <td align="center" width="25%">
+        <img src="screenshots/notification_badge.png" width="200" alt="Notification Badge"/>
+        <br/>
+        <sub><b>Notification Badge</b></sub>
+      </td>
+      <td align="center" width="25%">
       </td>
     </tr>
   </table>
