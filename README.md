@@ -26,21 +26,25 @@ A beautiful, production-ready Flutter messaging app with clean MVVM architecture
 ## 📱 Screenshots
 
 <div align="center">
-
-### App Demo
-<video src="screenshots/app_demo.mov" controls width="300"></video>
-<br/>
-
-### Messaging Screen
-![Messaging Screen](screenshots/messaging_screen.png)
-
-*Clean chat interface with gradient AppBar, agent status, and notification badge*
-
-### Emoji Picker
-![Emoji Picker](screenshots/emoji_picker.png)
-
-*Full emoji picker with category browsing and instant send*
-
+  <table>
+    <tr>
+      <td align="center" width="33%">
+        <video src="screenshots/app_demo.mov" controls width="250"></video>
+        <br/>
+        <sub><b>App Demo</b></sub>
+      </td>
+      <td align="center" width="33%">
+        <img src="screenshots/messaging_screen.png" width="250" alt="Messaging Screen"/>
+        <br/>
+        <sub><b>Messaging Screen</b></sub>
+      </td>
+      <td align="center" width="33%">
+        <img src="screenshots/emoji_picker.png" width="250" alt="Emoji Picker"/>
+        <br/>
+        <sub><b>Emoji Picker</b></sub>
+      </td>
+    </tr>
+  </table>
 </div>
 
 ## 🏗️ Architecture
