@@ -35,12 +35,12 @@ A beautiful, production-ready Flutter messaging app with clean MVVM architecture
       <td align="center" width="25%">
         <img src="screenshots/screenshot_01.png" width="200" alt="Splash Screen"/>
         <br/>
-        <sub><b>Splash Screen</b></sub>
+        <sub><b>Dashboard Sidebar</b></sub>
       </td>
       <td align="center" width="25%">
         <img src="screenshots/screenshot_02.png" width="200" alt="Chat Interface"/>
         <br/>
-        <sub><b>Chat Interface</b></sub>
+        <sub><b>Tickets Webview</b></sub>
       </td>
       <td align="center" width="25%">
         <img src="screenshots/screenshot_03.png" width="200" alt="Messaging Screen"/>
@@ -52,17 +52,17 @@ A beautiful, production-ready Flutter messaging app with clean MVVM architecture
       <td align="center" width="25%">
         <img src="screenshots/screenshot_04.png" width="200" alt="Emoji Selection"/>
         <br/>
-        <sub><b>Emoji Selection</b></sub>
+        <sub><b>Knowledge Base Editor</b></sub>
       </td>
       <td align="center" width="25%">
         <img src="screenshots/screenshot_05.png" width="200" alt="Emoji Picker"/>
         <br/>
-        <sub><b>Emoji Picker</b></sub>
+        <sub><b>SplashScreen</b></sub>
       </td>
       <td align="center" width="25%">
         <img src="screenshots/screenshot_06.png" width="200" alt="Notification Badge"/>
         <br/>
-        <sub><b>Notification Badge</b></sub>
+        <sub><b>System Logs</b></sub>
       </td>
       <td align="center" width="25%">
       </td>
