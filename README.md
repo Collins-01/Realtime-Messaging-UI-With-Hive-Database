@@ -218,7 +218,7 @@ await Hive.openBox('settings');
 Update the dashboard URL in `lib/screens/dashboard_screen.dart`:
 
 ```dart
-..loadRequest(Uri.parse('https://your-url-here.com'));
+..loadRequest(Uri.parse('http://localhost:4200'));
 ```
 
 ## 📊 Message Types
@@ -227,7 +227,7 @@ The app supports three message types:
 
 - **Text** - Regular text messages
 - **Emoji** - Large emoji display (32px)
-- **Image** - Image thumbnails (infrastructure ready)
+
 
 ## 🧪 Testing
 
@@ -258,4 +258,3 @@ flutter analyze
 - Includes unread message count
 
 
-w
