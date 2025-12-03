@@ -22,6 +22,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   /// Initialize the WebView controller
   void _initializeWebView() {
+    // On Android emulator, localhost refers to the emulator itself
+    // Use 10.0.2.2 to access the host machine's localhost
+    // For physical Android devices, you'll need to use your computer's actual IP address
+    final String url = Theme.of(context).platform == TargetPlatform.android
+        ? 'http://10.0.2.2:4200/'
+        : 'http://localhost:4200/';
+
     _controller = WebViewController()
       ..setJavaScriptMode(JavaScriptMode.unrestricted)
       ..setBackgroundColor(Colors.white)
@@ -51,7 +58,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
           },
         ),
       )
-      ..loadRequest(Uri.parse('http://localhost:4200/'));
+      ..loadRequest(Uri.parse(url));
   }
 
   /// Reload the WebView
