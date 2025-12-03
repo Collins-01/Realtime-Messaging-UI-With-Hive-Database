@@ -4,8 +4,14 @@ import 'package:flutter/material.dart';
 class ChatInput extends StatefulWidget {
   final Function(String) onSendMessage;
   final VoidCallback? onEmojiTap;
+  final FocusNode? focusNode;
 
-  const ChatInput({super.key, required this.onSendMessage, this.onEmojiTap});
+  const ChatInput({
+    super.key,
+    required this.onSendMessage,
+    this.onEmojiTap,
+    this.focusNode,
+  });
 
   @override
   State<ChatInput> createState() => _ChatInputState();
@@ -76,6 +82,7 @@ class _ChatInputState extends State<ChatInput> {
               ),
               child: TextField(
                 controller: _controller,
+                focusNode: widget.focusNode,
                 decoration: const InputDecoration(
                   hintText: 'Type a message...',
                   hintStyle: TextStyle(color: Color(0xFF6B7280), fontSize: 15),
